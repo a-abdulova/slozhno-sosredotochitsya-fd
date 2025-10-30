@@ -352,6 +352,10 @@ a:focus-visible {
     grid-row: 3;
   }
 
+  .footer {
+    min-height: var(--header-min-height-tablet);
+  }
+
   .footer__title {
     font-size: var(--h1-size-desktop);
   }
@@ -418,5 +422,9 @@ a:focus-visible {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+  }
+
+  .footer {
+    min-height: var(--header-min-height-desktop);
   }
 }
