@@ -5,16 +5,16 @@
 :root {
   --font-main: "IBM Plex Mono", monospace;
   --font-size: 18px;
-  --h1-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --h1-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  --h2-color: var(--control-color);
+  --main-title-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --main-title-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --title-color: var(--control-color);
   --page-bg-image: url("../images/cover-image-dark.png");
   --bg-color: #000028;
   --text-color: #f1b2ce;
   --accent-color: #ff0070;
   --text-on-accent: #000028;
   --link-underline-color: #ff8dcb;
-  --h1-color: #db00ff;
+  --main-title-color: #db00ff;
   --font-weight-bold: 700;
   --control-color: var(--accent-color);
   --control-hover-color: rgba(255, 0, 112, 0.4);
@@ -34,9 +34,13 @@
     --accent-color: #ff8dcb;
     --text-on-accent: #353430;
     --control-color: #353430;
-    --control-hover-color: rgba(53, 52, 48, 0.4);
+    --control-hover-color: rgba(50, 49, 45, 0.4);
     --link-underline-color: #ff8dcb;
-    --h1-color: #FFC2E6;
+    --main-title-color: #ffc2e6;
     --page-bg-image: url("../images/cover-image-light.png");
+  }
+
+  :root:not(.theme-dark):not(.theme-light) .rec {
+    display: none;
   }
 }

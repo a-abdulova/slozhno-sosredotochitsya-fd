@@ -10,8 +10,8 @@
   --accent-color: #ff8dcb;
   --text-on-accent: #353430;
   --control-color: #353430;
-  --h1-color: #ffc2e6;
-  --control-hover-color: rgba(53, 52, 48, 0.4);
+  --main-title-color: #ffc2e6;
+  --control-hover-color: rgba(50, 49, 45, 0.4);
   --link-underline-color: #ff8dcb;
   --page-bg-image: url("../images/cover-image-light.png");
 }
@@ -27,9 +27,12 @@
     --accent-color: #ff8dcb;
     --text-on-accent: #353430;
     --control-color: #353430;
-    --h1-color: #ffc2e6;
-    --control-hover-color: rgba(53, 52, 48, 0.4);
+    --main-title-color: #ffc2e6;
+    --control-hover-color: rgba(50, 49, 45, 0.4);
     --link-underline-color: #ff8dcb;
     --page-bg-image: url("../images/cover-image-light.png");
+  }
+  :root:not(.theme-dark):not(.theme-light) .rec {
+    display: none;
   }
 }
